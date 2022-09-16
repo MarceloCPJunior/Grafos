@@ -133,6 +133,7 @@ int main(){
 
     int qtdF, qtdP;
     int num1, num2;
+    int i = 0;
 
     printf("Digite seu o número de funcionários e pares: ");
     scanf("%d %d", &qtdF, &qtdP);
@@ -148,7 +149,7 @@ int main(){
         inserir(&lista, num2);
         inserirLigacao(&lista, num2, num1);
     }
-    
+
     while(qtdF > lista.tam){
         inserir(&lista, i);
         i++;
