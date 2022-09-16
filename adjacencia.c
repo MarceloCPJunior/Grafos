@@ -149,6 +149,11 @@ int main(){
         inserirLigacao(&lista, num2, num1);
     }
     
+    while(qtdF > lista.tam){
+        inserir(&lista, i);
+        i++;
+    }
+    
     listaAdjacencia(&lista);
     printf("\n\n");
     matrizAdjacencia(&lista);
